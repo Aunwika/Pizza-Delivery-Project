@@ -27,7 +27,7 @@ Order ID, Order Month, Order Hour, Is Peak Hour, Is Weekend, Is Delayed, Distanc
 - ระยะเวลาเฉลี่ยในการส่ง Pizza จำแนกตาม Weekend​
 - ระยะเวลาเฉลี่ยในการส่ง Pizza จำแนกตามการจราจร​
 
-<img width="999" height="785" alt="Image" src="https://github.com/user-attachments/assets/6564a6a6-cba8-4bd5-9f1e-b79f2baaa1bd" />
+<img width="990" height="785" alt="Image" src="https://github.com/user-attachments/assets/ce3ad27a-e8e8-4ec6-b6a8-beb2f3189b80" />
 
 ## Findings and Insights
   จากการวิเคราะห์ข้อมูลการจัดส่งพิซซ่าจำนวน 1,004 ออเดอร์ พบประเด็นสำคัญที่สะท้อนความท้าทายด้านประสิทธิภาพการให้บริการ รวมถึงปัจจัยที่ส่งผลต่อความล่าช้าของการจัดส่ง ดังนี้​
