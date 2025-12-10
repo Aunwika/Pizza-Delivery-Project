@@ -31,9 +31,9 @@
 | Restaurant Name             | ชื่อของร้านอาหาร                               | Nominal              | Domino’s, Pizza Hut, Papa John’s       |
 | Location                    | เมืองและรัฐที่ตั้งของร้านอาหาร                | Nominal              | New York, NY                           |
 | Order Date                  | วันที่มีการสั่งออเดอร์                         | Interval (Date)      | 2024-10-01                              |
-| Order Time                  | เวลาที่มีการสั่งออเดอร์                        | Interval (Time)      | 20:00:00                                |
+| Order Time                  | เวลาที่มีการสั่งออเดอร์                        | Interval (Time)      | 8:00:00 PM                               |
 | Delivery Date               | วันที่จัดส่งสินค้า                              | Interval (Date)      | 2024-10-02                              |
-| Delivery Time               | เวลาที่จัดส่งสินค้า                             | Interval (Time)      | 21:00:00                                |
+| Delivery Time               | เวลาที่จัดส่งสินค้า                             | Interval (Time)      | 9:00:00 PM                               |
 | Delivery Duration (min)     | ระยะเวลาในการจัดส่ง (นาที)                     | Ratio (Continuous)   | 15, 20, 25, 30                          |
 | Pizza Size                  | ขนาดของพิซซ่าที่สั่ง                           | Ordinal              | Small, Medium, Large, XL               |
 | Pizza Type                  | ประเภทรสชาติหรือส่วนผสมของพิซซ่า              | Nominal              | Veg, Non-Veg, Vegan, Cheese Burst      |
