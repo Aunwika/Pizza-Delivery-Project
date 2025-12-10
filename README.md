@@ -8,14 +8,22 @@
 ## SMART Objectives
 - ลดเปอร์เซ็นต์การส่งล่าช้าจาก 20% ให้เหลือ 10% ภายใน 3 เดือน ​โดยวิเคราะห์ปัจจัยที่มีผลต่อการ Delay เพื่อยกระดับคุณภาพบริการและเพิ่มประสิทธิภาพการวางแผนกำลังคน​
 
-## Questions/Hypothesis
+## Questions
+- ปัจจัยอะไรบ้างที่ส่งผลต่อการจัดส่งล่าช้า (Delay)?
+- ช่วงเวลาที่สั่งพิซซ่าส่งผลต่อการจัดส่งล่าช้าหรือไม่?
+- Traffic Level ส่งผลต่อการจัดส่งล่าช้าหรือไม่?
+- ขนาดพิซซ่าทำให้เวลาส่งต่างกันหรือไม่?
+- ระยะทางเกี่ยวข้องกับเวลาส่งหรือไม่?
+- จำนวนท็อปปิ้งทำให้เวลาส่งเพิ่มขึ้นหรือไม่?
+
+## Hypothesis
 - ช่วงเวลา 19:00–20:00 เป็น Peak Hour ที่ทำให้เกิด Delay สูง​
 - Traffic Level: High ส่งผลให้เวลาส่งเพิ่มขึ้นอย่างมีนัยสำคัญ​
 - ระยะทางมากขึ้นสัมพันธ์กับโอกาสส่งล่าช้าสูงขึ้น​
 - พิซซ่าขนาดใหญ่ใช้เวลาเตรียมนาน ทำให้เกิดการส่งล่าช้ามากกว่าไซส์ปกติ​
 - จำนวนท็อปปิ้งมากขึ้นทำให้เวลาเตรียมอาหารเพิ่มขึ้น เพิ่มโอกาส Delay​
 
-## DATA DICTIONARY
+## Data Dictionary
 
 | Attribute                    | Description                               | Data Type           | Valid Range/Example                   |
 |-----------------------------|-------------------------------------------------|----------------------|----------------------------------------|
@@ -47,28 +55,29 @@
 | Order Hour                  | ช่วงเวลาของวันที่มีการสั่งออเดอร์              | Ratio (Discrete)     | 18, 19, 20                             |
 | Restaurant Avg Time         | ค่าเฉลี่ยเวลาการจัดส่งของร้านอาหาร            | Ratio (Continuous)   | [0, Infinity)                          |
 
-## 
+## Data Collection and Preparation
+- แก้ชื่อร้านจาก Marco’s Pizza เป็น Marco's Pizza
+- แยก Column DeliveryDateTime เป็น DeliveryDate กับ DeliveryTime
+- แยก Column OrderDateTime เป็น OrderDate กับ OrderTime
+- แก้ไขข้อมูลที่ปีเป็น 2026 ให้เป็น 2025
 
-## Analytics Methodology​
-- จำนวน Order Pizza แยกตามรายชั่วโมง​
-- ระยะเวลาเฉลี่ยในการส่ง Pizza ตามระยะทาง​
-- ระยะเวลาเฉลี่ยในการส่ง Pizza แยกตามขนาดของพิซซ่า​
-- ระยะเวลาเฉลี่ยในการส่ง Pizza จำแนกตามจำนวน Topping ที่มีการสั่งเข้ามา​
-- ระยะเวลาเฉลี่ยในการส่ง Pizza จำแนกตาม Weekend​
-- ระยะเวลาเฉลี่ยในการส่ง Pizza จำแนกตามการจราจร​
-
-<img width="990" height="785" alt="Image" src="https://github.com/user-attachments/assets/ce3ad27a-e8e8-4ec6-b6a8-beb2f3189b80" />
-
-วิเคราะห์ข้อมูลด้วย Excel
+## Analyze Data using Excel
 - Exploratory Data Analysis (EDA)
-- Correlation
+- Correlational
+- Descriptive Correlational
+- T-Test
 - Pivot Table
 
-วิเคราะห์ข้อมูลด้วย Tableau
+## Analyze Data using Tableau
+<img width="990" height="785" alt="Image" src="https://github.com/user-attachments/assets/ce3ad27a-e8e8-4ec6-b6a8-beb2f3189b80" />
+
 - Exploratory Data Analysis (EDA)
 - Correlation
 - Dashboard
 - Story
+
+## Correlation Heatmap
+<img width="935" height="590" alt="Image" src="https://github.com/user-attachments/assets/b99eaac2-aad1-4307-8604-a71f94fe2e9a" />
 
 ## Findings and Insights
   จากการวิเคราะห์ข้อมูลการจัดส่งพิซซ่าจำนวน 1,004 ออเดอร์ พบประเด็นสำคัญที่สะท้อนความท้าทายด้านประสิทธิภาพการให้บริการ รวมถึงปัจจัยที่ส่งผลต่อความล่าช้าของการจัดส่ง ดังนี้​
@@ -117,7 +126,7 @@
 
    ข้อมูลชี้ให้เห็นว่าความล่าช้าของการจัดส่งเกิดจาก “ความหนาแน่นของงาน + ระยะทาง + การจราจร + ความซับซ้อนของเมนู” ซึ่งสะท้อนถึงความจำเป็นในการปรับปรุงกระบวนการอย่างรอบด้าน ทั้งด้านการผลิต การจัดส่ง และการวางแผนเชิงกลยุทธ์ หากนำข้อเสนอแนะเหล่านี้ไปใช้อย่างเป็นระบบ จะช่วยลดสัดส่วนการล่าช้า เพิ่มความพึงพอใจของลูกค้า และยกระดับประสิทธิภาพของธุรกิจโดยรวมอย่างมีนัยสำคัญ​
 
-## เอกสารการนำเสนอ
+## Presentation Documents
   ​
   
   ​
