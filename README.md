@@ -30,9 +30,9 @@
 | Order ID                    | รหัสออเดอร์ที่ใช้ระบุออเดอร์พิซซ่าแต่ละรายการ | Ordinal              | ORD001, ORD050                         |
 | Restaurant Name             | ชื่อของร้านอาหาร                               | Nominal              | Domino’s, Pizza Hut, Papa John’s       |
 | Location                    | เมืองและรัฐที่ตั้งของร้านอาหาร                | Nominal              | New York, NY                           |
-| Order Date                  | วันที่มีการสั่งออเดอร์                         | Interval (Date)      | 2024-10-01                              |
+| Order Date                  | วันที่มีการสั่งออเดอร์                         | Interval (Date)      | 10/1/2024                              |
 | Order Time                  | เวลาที่มีการสั่งออเดอร์                        | Interval (Time)      | 8:00:00 PM                               |
-| Delivery Date               | วันที่จัดส่งสินค้า                              | Interval (Date)      | 2024-10-02                              |
+| Delivery Date               | วันที่จัดส่งสินค้า                              | Interval (Date)      | 21/3/2024                             |
 | Delivery Time               | เวลาที่จัดส่งสินค้า                             | Interval (Time)      | 9:00:00 PM                               |
 | Delivery Duration (min)     | ระยะเวลาในการจัดส่ง (นาที)                     | Ratio (Continuous)   | 15, 20, 25, 30                          |
 | Pizza Size                  | ขนาดของพิซซ่าที่สั่ง                           | Ordinal              | Small, Medium, Large, XL               |
