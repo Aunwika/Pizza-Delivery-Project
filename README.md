@@ -16,8 +16,36 @@
 - จำนวนท็อปปิ้งมากขึ้นทำให้เวลาเตรียมอาหารเพิ่มขึ้น เพิ่มโอกาส Delay​
 
 ## Data Sources/Attributes
-- ข้อมูลออเดอร์พิซซ่า แยกประเภทตามร้านค้า และ Location ประกอบไปด้วย
-Order ID, Order Month, Order Hour, Is Peak Hour, Is Weekend, Is Delayed, Distance (km), Traffic Level, Pizza Size, Toppings Count, Delivery Duration (min)​
+
+| Attribute                    | Description                               | Data Type           | Valid Range/Example                   |
+|-----------------------------|-------------------------------------------------|----------------------|----------------------------------------|
+| Order ID                    | รหัสออเดอร์ที่ใช้ระบุออเดอร์พิซซ่าแต่ละรายการ | Ordinal              | ORD001, ORD050                         |
+| Restaurant Name             | ชื่อของร้านอาหาร                               | Nominal              | Domino’s, Pizza Hut, Papa John’s       |
+| Location                    | เมืองและรัฐที่ตั้งของร้านอาหาร                | Nominal              | New York, NY                           |
+| Order Date                  | วันที่มีการสั่งออเดอร์                         | Interval (Date)      | 2024-10-01                              |
+| Order Time                  | เวลาที่มีการสั่งออเดอร์                        | Interval (Time)      | 20:00:00                                |
+| Delivery Date               | วันที่จัดส่งสินค้า                              | Interval (Date)      | 2024-10-02                              |
+| Delivery Time               | เวลาที่จัดส่งสินค้า                             | Interval (Time)      | 21:00:00                                |
+| Delivery Duration (min)     | ระยะเวลาในการจัดส่ง (นาที)                     | Ratio (Continuous)   | 15, 20, 25, 30                          |
+| Pizza Size                  | ขนาดของพิซซ่าที่สั่ง                           | Ordinal              | Small, Medium, Large, XL               |
+| Pizza Type                  | ประเภทรสชาติหรือส่วนผสมของพิซซ่า              | Nominal              | Veg, Non-Veg, Vegan, Cheese Burst      |
+| Toppings Count              | จำนวนท็อปปิ้งที่เพิ่ม                           | Ratio (Discrete)     | 0, 1, 2, 3, 4, 5                        |
+| Distance (km)               | ระยะทางจากร้านถึงสถานที่จัดส่ง                | Ratio (Continuous)   | [0, Infinity)                          |
+| Traffic Level               | ระดับความหนาแน่นของการจราจรระหว่างการจัดส่ง   | Ordinal              | Low, Medium, High                      |
+| Payment Method              | วิธีการชำระเงิน                                 | Nominal              | Cash, Card, Wallet, UPI                |
+| Is Peak Hour                | ออเดอร์นี้เป็นช่วงเวลาเร่งด่วนหรือไม่          | Nominal (Binary)     | TRUE / FALSE                           |
+| Is Weekend                  | ออเดอร์นี้เป็นวันหยุดสุดสัปดาห์หรือไม่        | Nominal (Binary)     | TRUE / FALSE                           |
+| Delivery Efficiency (min/km)| ประสิทธิภาพเวลาในการจัดส่งต่อกิโลเมตร         | Ratio (Continuous)   | [0, Infinity)                          |
+| Topping Density             | อัตราส่วนจำนวนท็อปปิ้งต่อระยะทาง              | Ratio (Continuous)   | 0.5, 1                                 |
+| Order Month                 | เดือนที่มีการสั่งออเดอร์                       | Ordinal              | January, February                      |
+| Payment Category            | ประเภทช่องทางการชำระเงิน (ออนไลน์/ออฟไลน์)     | Nominal              | Online, Offline                        |
+| Estimated Duration (min)    | เวลาที่คาดการณ์ว่าจะจัดส่งสำเร็จ              | Ratio (Continuous)   | [0, Infinity)                          |
+| Delay (min)                 | จำนวนนาทีที่ล่าช้าจากเวลาที่คาดการณ์          | Ratio (Continuous)   | [0, Infinity)                          |
+| Is Delayed                  | ออเดอร์นี้ส่งล่าช้าหรือไม่                     | Nominal (Binary)     | TRUE / FALSE                           |
+| Pizza Complexity            | คะแนนความซับซ้อนของพิซซ่า                     | Ratio (Discrete)     | 2, 6, 12, 20                           |
+| Traffic Impact              | ผลกระทบของการจราจรต่อเวลาจัดส่ง                | Ratio (Discrete)     | 1, 2, 3                                |
+| Order Hour                  | ช่วงเวลาของวันที่มีการสั่งออเดอร์              | Ratio (Discrete)     | 18, 19, 20                             |
+| Restaurant Avg Time         | ค่าเฉลี่ยเวลาการจัดส่งของร้านอาหาร            | Ratio (Continuous)   | [0, Infinity)                          |
 
 ## Analytics Methodology​
 - จำนวน Order Pizza แยกตามรายชั่วโมง​
