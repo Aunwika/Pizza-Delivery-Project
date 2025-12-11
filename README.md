@@ -100,7 +100,7 @@
 
 <img width="990" height="785" alt="Image" src="https://github.com/user-attachments/assets/ce3ad27a-e8e8-4ec6-b6a8-beb2f3189b80" />
 
-**ไฟล์การวิเคราะห์ข้อมูลด้วย Tableau** : 
+**ไฟล์การวิเคราะห์ข้อมูลด้วย Tableau** : [**Tableau : Pizza Delivery Analysis**](https://github.com/Aunwika/Pizza-Delivery-Project/blob/e43c05f1b6094e879e0c306d3e69eb9ee92a07e2/Tableau_Pizza_Delivery.twbx)
 
 **ตัวอย่างการวิเคราห์ข้อมูลที่มีใน Tableau**
 - Exploratory Data Analysis (EDA)
