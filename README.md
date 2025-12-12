@@ -78,7 +78,7 @@
 - Correlational
 - Pivot Table
 
-**ตัวอย่าง Scatter Plot Graph ใน Excel**
+**ตัวอย่าง Box Plot Graph ใน Excel**
 
 <img width="956" height="713" alt="Image" src="https://github.com/user-attachments/assets/8f5aa9b6-98b4-4ae5-abe3-7e1d205c0611" />
 
@@ -88,7 +88,7 @@
 - ความสม่ำเสมอ: Papa John's และ Pizza Hut น่าจะเป็นทางเลือกที่ดีที่สุด หากต้องการเวลาจัดส่งที่สม่ำเสมอและคาดเดาได้​
 - ความเสี่ยงช้าผิดปกติ: ทุกร้านยกเว้น Domino's มีความเสี่ยงจะเกิดการจัดส่งที่นานผิดปกติ (Outliers) ถึง 50 นาที​
 
-**ตัวอย่าง Box Plot Graph ใน Excel**
+**ตัวอย่าง Scatter Plot Graph ใน Excel**
 
 <img width="715" height="570" alt="Image" src="https://github.com/user-attachments/assets/542ad530-ce8c-4fe2-b8d5-04c2eb7b55ae" />
 
