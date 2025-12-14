@@ -99,7 +99,7 @@
 ## Analyze Data using Tableau 📉
 **ตัวอย่าง Dashboard ใน Tableau**
 
-<img width="1005" height="796" alt="Image" src="https://github.com/user-attachments/assets/b7fc2614-90a6-466e-8bb1-2ad225713b03" />
+<img width="998" height="788" alt="Image" src="https://github.com/user-attachments/assets/4df5fdc6-ac43-4d72-8bfc-59b84cd9b7e4" />
 
 **ไฟล์การวิเคราะห์ข้อมูลด้วย Tableau** : [**Pizza Delivery Analysis : Tableau**](https://github.com/Aunwika/Pizza-Delivery-Project/blob/31600c194d519414f5640ab7a042ebed707d1a4d/Tableau_Pizza_Delivery.twbx)
 
